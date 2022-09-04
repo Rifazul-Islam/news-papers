@@ -48,7 +48,7 @@ const displayShow = (data) => {
 
 const cotagoriesId = (id) => {
 
-    // toggleSpinner(true)
+    toggleSpinner(true)
     // console.log(id)
     fetch(`https://openapi.programming-hero.com/api/news/category/${id}`)
 
@@ -91,21 +91,22 @@ const cotagoriesIdShow = (data) => {
         showContainer.appendChild(div)
     })
 
-    // toggleSpinner(false)
+    toggleSpinner(false)
 
 }
 
 //Toggele add 
-// const toggleSpinner = (isloading) => {
-//     const loadingCotent = document.getElementById('loading');
 
-//     if (isloading) {
-//         loadingCotent.classList.remove('d-none');
-//     }
-//     else {
-//         loadingCotent.classList.add('d-none')
-//     }
-// }
+const toggleSpinner = (isloading) => {
+    const loadingCotent = document.getElementById('loading');
+
+    if (isloading) {
+        loadingCotent.classList.remove('d-none');
+    }
+    else {
+        loadingCotent.classList.add('d-none')
+    }
+}
 
 
 
