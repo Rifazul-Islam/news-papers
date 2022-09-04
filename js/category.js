@@ -80,7 +80,8 @@ const cotagoriesIdShow = (data) => {
                       <img class="rounded-5 mt-4 me-3" style="width: 50px;" src="${data.author.img}" class="img-fluid rounded-start" >
                       <span> ${data.author.name ? data.author.name : 'Not Found'} </span>
                         <span class="ps-4 pe-3"> <i class="fa-regular fa-eye"></i> ${data.total_view} </span>
-                        <button onclick="showDetails('${data.category_id}')" class ="mx-5 pe-1 btn btn-primary">show ditails</button>
+                        <button onclick="showDetails('${data.category_id}')" class ="mx-5 pe-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal">show ditails</button>
+
                   </div>
               </div>
           </div>
@@ -115,22 +116,22 @@ const showDetails = modal => {
         .then(data => displayShowDetails(data.data))
 }
 
-// const displayShowDetails = data => {
-//     data.forEach(data => {
-//         console.log(data)
+const displayShowDetails = data => {
+    data.forEach(data => {
+        console.log(data)
 
-//         const modalBody = document.getElementById('modals-body');
+        const modalBody = document.getElementById('modals-body');
 
-//         modalBody.innerHTML = `
+        modalBody.innerHTML = `
 
-//             <img src="${data.author.img}" class="img-fluid rounded-start" alt="...">
-//               <h3 class ="text-secondary pt-3"> Name : ${data.author.name ? data.author.name : 'data not Found'}  </h3>
-//               <h5 class ="text-secondary pt-3"> Published date : ${data.author.published_date ? data.author.published_date : 'data not Found'}  </h5>
-//               <p class="card-text"> ${data.details.length > 100 ? data.details.slice(0, 100) + '...' : data.details}.</p>
-//             `;
-//     })
+            <img src="${data.author.img}" class="img-fluid rounded-start" alt="...">
+              <h3 class ="text-secondary pt-3"> Name : ${data.author.name ? data.author.name : 'data not Found'}  </h3>
+              <h5 class ="text-secondary pt-3"> Published date : ${data.author.published_date ? data.author.published_date : 'data not Found'}  </h5>
+              <p class="card-text"> ${data.details.length > 100 ? data.details.slice(0, 100) + '...' : data.details}.</p>
+            `;
+    })
 
-// }
+}
 
 
 
