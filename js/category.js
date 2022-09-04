@@ -79,8 +79,8 @@ const cotagoriesIdShow = (data) => {
 
                       <img class="rounded-5 mt-4 me-3" style="width: 50px;" src="${data.author.img}" class="img-fluid rounded-start" >
                       <span> ${data.author.name ? data.author.name : 'Not Found'} </span>
-                        <span class="ps-5 pe-3"> <i class="fa-regular fa-eye"></i> ${data.total_view} </span>
-                       
+                        <span class="ps-4 pe-3"> <i class="fa-regular fa-eye"></i> ${data.total_view} </span>
+                        <button onclick="showDetails('${data.category_id}')" class ="mx-5 pe-1 btn btn-primary">show ditails</button>
                   </div>
               </div>
           </div>
