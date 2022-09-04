@@ -13,6 +13,10 @@ const displayShow = (data) => {
 
     // console.log(data)
 
+    // const x = Object.keys(data);
+    // const count = x.length
+    // console.log(count)
+
     const catagoriContainer = document.getElementById('catagoris-container');
 
 
@@ -34,7 +38,7 @@ const displayShow = (data) => {
 }
 
 
-// const inputNamber = document.getElementById('number');
+// const inputNamber = document.getElementById('input-number');
 
 // if (data.length > 0) {
 //     inputNamber.value = ` ${data.length} items found `;
@@ -128,7 +132,7 @@ const displayShowDetails = data => {
             <img src="${data.author.img}" class="img-fluid rounded-start" alt="...">
               <h3 class ="text-secondary pt-3"> Name : ${data.author.name ? data.author.name : 'data not Found'}  </h3>
               <h5 class ="text-secondary pt-3"> Published date : ${data.author.published_date ? data.author.published_date : 'data not Found'}  </h5>
-              <p class="card-text"> ${data.details.length > 100 ? data.details.slice(0, 100) + '...' : data.details}.</p>
+              <p class="card-text"> Details : ${data.details.length > 100 ? data.details.slice(0, 100) + '...' : data.details}.</p>
             `;
     })
 

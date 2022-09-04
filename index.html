@@ -11,6 +11,8 @@
     <!-- css link Bootsrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index1.html">
+
 </head>
 
 
@@ -22,7 +24,7 @@
             <a class="navbar-brand ps-3">News Papers</a>
             <div class="d-flex pe-3">
                 <h4 class="pe-2 text-info"> News</h4>
-                <h4 id="blog" class=" text-info"> bloge </h5>
+                <h4 class=" text-info"> <a class="text-decoration-none" href="index1.html"> blog </a> </h5>
             </div>
             </div>
         </nav>
@@ -107,40 +109,21 @@
         <!-- Question 3-->
 
 
-        <div onclick="showDispl()" id="blog" class="d-none">
-
-            <b> 1. Var , Let, Const difference : </b>var declarations are globally scoped or function scoped while let
-            and const
-            are block scoped. var variables can be updated and re-declared within its scope; let variables can be
-            updated but not re-declared; const variables can neither be updated nor re-declared. They are all hoisted to
-            the top of their scope.
-            <hr>
-
-            2 . Array function VS Regular function : this value inside a regular function is dynamic and depends on the
-            invocation. But this inside the arrow function is bound lexically and equals to this of the outer function.
-            arguments object inside the regular functions contains the list of arguments. The arrow function, on the
-            opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest
-            parameter ...args).
-            If the arrow function has one expression, then the expression is returned implicitly, even without using the
-            return keyword.
-
-            <hr>
-
-            3. Map,ForEach,Filter find :map creates a new array by transforming every element in an array individually.
-            filter creates a new array by removing elements that don't belong.The main difference between forEach and
-            filter is that forEach just loop over the array and executes the callback but filter executes the callback
-            and check its return value. If the value is true element remains in the resulting array but if the return
-            value is false the element will be removed for the resulting array.
-
-        </div>
 
 
+    </main>
 
-        <script src="js/category.js"></script>
-        <!-- js link Bootsrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
+    <!-- <footer class=" container mt-5  bg-light">
+
+        <p class="text-center p-5"> Copyright 2022 News Papers</p>
+    </footer> -->
+
+
+    <script src="js/category.js"></script>
+    <!-- js link Bootsrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

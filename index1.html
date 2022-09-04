@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <style>
+        .blog-1 {
+
+
+            background-color: rgb(223, 220, 217);
+
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="blog">
+
+            <div class="blog-1">
+                <b> 1. Var , Let, Const difference : </b>var declarations are globally scoped or function scoped while
+                let
+                and const
+                are block scoped. var variables can be updated and re-declared within its scope; let variables can be
+                updated but not re-declared; const variables can neither be updated nor re-declared. They are all
+                hoisted to
+                the top of their scope.
+            </div>
+
+            <div class="blog-1">
+                <b> 2 . Array function VS Regular function : </b> this value inside a regular function is dynamic and
+                depends on
+                the
+                invocation. But this inside the arrow function is bound lexically and equals to this of the outer
+                function.
+                arguments object inside the regular functions contains the list of arguments. The arrow function, on the
+                opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest
+                parameter ...args).
+                If the arrow function has one expression, then the expression is returned implicitly, even without using
+                the
+                return keyword.
+
+            </div>
+
+            <div class="blog-1">
+                <b> 3. Map,ForEach,Filter find :</b>map creates a new array by transforming every element in an array
+                individually.
+                filter creates a new array by removing elements that don't belong.The main difference between forEach
+                and
+                filter is that forEach just loop over the array and executes the callback but filter executes the
+                callback
+                and check its return value. If the value is true element remains in the resulting array but if the
+                return
+                value is false the element will be removed for the resulting array.
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
